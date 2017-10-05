@@ -26,4 +26,4 @@ let logger = store => next => action => {
 
 let store=applyMiddleware(logger)(createStore)(counter)
 store.dispatch({type: 'ADD'})
-store.dispatch({type: 'SUB'})
+// store.dispatch({type: 'SUB'})
